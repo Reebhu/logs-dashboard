@@ -3,7 +3,7 @@ package com.dash;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties
-public class logParent {
+public class LogParent {
 	
 	private String totalPages;
 	private Reports[] reports;
