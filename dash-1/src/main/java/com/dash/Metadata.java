@@ -1,5 +1,8 @@
 package com.dash;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties
 public class Metadata {
 
 	private String purpose;

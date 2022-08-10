@@ -7,6 +7,8 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties
 public class Reports {
 	
+	
+
 	private String createdBy;
 	private String creationDate;
 	private String lastModifiedBy;
@@ -201,6 +203,15 @@ public class Reports {
 		this.createdBy = createdBy;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return "Reports [createdBy=" + createdBy + ", creationDate=" + creationDate + ", lastModifiedBy="
+				+ lastModifiedBy + ", lastModifiedDate=" + lastModifiedDate + ", source=" + source + ", hospital="
+				+ hospital + ", requestId=" + requestId + ", metadata=" + metadata + ", id=" + id + ", sender=" + sender
+				+ ", receiver=" + receiver + ", sendDate=" + sendDate + ", sendTime=" + sendTime + ", messageType="
+				+ messageType + ", messageText=" + messageText + ", mediaBucket=" + mediaBucket + ", mediaKey="
+				+ mediaKey + ", status=" + status + ", errorMessage=" + errorMessage + ", values=" + values + ", sid="
+				+ sid + "]";
+	}
 
 }

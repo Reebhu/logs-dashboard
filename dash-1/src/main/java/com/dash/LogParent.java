@@ -1,12 +1,15 @@
 package com.dash;
 
+import java.util.List;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 
 @JsonIgnoreProperties
 public class LogParent {
 	
 	private String totalPages;
-	private Reports[] reports;
+	private List<Reports> reports;
 	private String totalItems;
 	private String currentPage;
 	
@@ -16,11 +19,13 @@ public class LogParent {
 	public void setTotalPages(String totalPages) {
 		this.totalPages = totalPages;
 	}
-	public Reports[] getReports() {
+	
+	
+	public List<Reports> getReports() {
 		return reports;
 	}
-	public void setReports(Reports[] reportst) {
-		this.reports = reportst;
+	public void setReports(List<Reports> reports) {
+		this.reports = reports;
 	}
 	public String getTotalItems() {
 		return totalItems;
